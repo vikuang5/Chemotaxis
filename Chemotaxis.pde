@@ -11,7 +11,7 @@ class Bacteria
     myX = (int)(Math.random()*400);
     myY = (int)(Math.random()*410)-20;
     mySize = (int)(Math.random()*90)-20;
-    mySpeed = mySize/100.0;
+    mySpeed = mySize/40.0;
     myColor = color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   }
   void rise()
@@ -29,7 +29,7 @@ class Bacteria
   void show()
   {
     noStroke();
-    fill(myColor, 70);
+    fill(myColor);
     ellipse(myX, myY, mySize, mySize);
   }
 }
