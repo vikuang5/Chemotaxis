@@ -16,7 +16,10 @@ class Bacteria
   }
   void rise()
   {
-    myX = myX + (int)(Math.random()*5)-2;
+    if(mouseX > myX)
+    myX = myX + (int)(Math.random()*5)-1;
+    else 
+    myX = myX + (int)(Math.random()*5)-3;
     myY = myY - mySpeed;
     if (myY < -50)
     {
