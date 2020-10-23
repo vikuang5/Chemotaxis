@@ -14,7 +14,7 @@ class Bacteria
     mySpeed = mySize/40.0;
     myColor = color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   }
-  void rise()
+  void move()
   {
     if(mouseX > myX)
     myX = myX + (int)(Math.random()*5)-1;
@@ -46,6 +46,6 @@ void draw() {
   background(100);
   for (int i = 0; i < bob.length; i++) {
     bob[i].show();
-    bob[i].rise();
+    bob[i].move();
   }
 }
